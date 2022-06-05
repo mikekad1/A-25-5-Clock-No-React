@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <title>A 25 + 5 Clock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <div class="container"></div>
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1>A 25 + 5 Clock</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <div id="break-label">
+            <h2>Break Length</h2>
+          </div>
+          <div id="break-length">
+            5
+          </div>
+          <button id="break-increment" class="btn btn-block btn-outline-success" onClick="incrementBreak()">More Break</button>
+          <button id="break-decrement" class="btn btn-block btn-outline-primary" onClick="decrementBreak()">Less Break</button>
+        </div>
+        <div class="col">
+          <div id="session-label">
+            <h2>Session Length</h2>
+          </div>
+          <div id="session-length">
+            25
+          </div>
+          <button id="session-increment"class="btn btn-block btn-outline-success" onClick="incrementSession()">More Session</button>
+          <button id="session-decrement"class="btn btn-block btn-outline-primary" onClick="decrementSession()">Less Session</button>
+        </div>
+      </div>
+    </div>
+  <div class="row text-center py-4">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <div id="timer-label">Session Initialized</div>
+          </h5>
+          <p class="card-text">
+            <div id="time-left">
+              <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+          </p>
+          <div class="row">
+            <div class="col">
+              <a href="#" id="start_stop"class="btn  btn-block btn-outline-primary" onClick="toggleClockOnOff()">Start/Stop</a>
+            </div>
+            <div class="col">
+              <a href="#" id="reset"class="btn btn-block  btn-outline-danger" onClick="resetClock()">Reset</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
